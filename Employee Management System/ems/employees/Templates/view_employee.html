@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Employee Details</h3>
+
+<ul class="list-group">
+    <li class="list-group-item"><b>ID:</b> {{ emp.employee_id }}</li>
+    <li class="list-group-item"><b>Name:</b> {{ emp.name }}</li>
+    <li class="list-group-item"><b>Email:</b> {{ emp.email }}</li>
+    <li class="list-group-item"><b>Phone:</b> {{ emp.phone }}</li>
+    <li class="list-group-item"><b>Department:</b> {{ emp.department }}</li>
+    <li class="list-group-item"><b>Designation:</b> {{ emp.designation }}</li>
+    <li class="list-group-item"><b>Salary:</b> {{ emp.salary }}</li>
+    <li class="list-group-item"><b>Joining Date:</b> {{ emp.date_of_joining }}</li>
+</ul>
+
+<a href="{% url 'dashboard' %}" class="btn btn-secondary mt-3">Back</a>
+{% endblock %}
